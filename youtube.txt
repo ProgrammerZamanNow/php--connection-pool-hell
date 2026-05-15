@@ -1,0 +1,39 @@
+PHP itu BAHAYA buat database kalian! 😱
+
+Pernah ngalamin error "Too many connections" di MySQL? Atau aplikasi PHP tiba-tiba lemot pas traffic naik? Welcome to CONNECTION POOL HELL — masalah klasik PHP yang jarang dibahas tapi BISA bikin database production kamu KOLEPS!
+
+Di video ini kita kupas TUNTAS:
+✅ Kenapa PHP itu beda banget sama Java/Go/Node soal database connection
+✅ Kenapa PHP gak punya connection pool BAWAAN (dan kenapa itu masalah serius)
+✅ Live demo bikin REST API PHP yang nyaris bikin MySQL CRASH
+✅ Load test pakai k6 — angkanya bikin kaget!
+✅ Solusi pakai PERSISTENT CONNECTION (tapi ada jebakan!)
+✅ Cara pakai ProxySQL biar 100 worker PHP cukup butuh 20 koneksi MySQL aja
+✅ Bahas idle timeout: kenapa PHP gak bisa auto-close connection?
+
+Tools yang dipakai:
+🔧 PHP 8.3 + PDO (MySQL)
+🔧 MySQL 8.0
+🔧 Nginx + PHP-FPM (production mode, BUKAN built-in server!)
+🔧 ProxySQL 2.7 sebagai connection pooler
+🔧 Podman + Docker Compose untuk orchestration
+🔧 k6 untuk load testing
+🔧 5 replica PHP container — siap perang!
+
+📂 Source code lengkap (clone dan coba sendiri!):
+https://github.com/ProgrammerZamanNow/php--connection-pool-hell
+
+⏱️ Timeline:
+00:00 Intro
+01:22 Konsep Connection Pool
+06:06 Membuat Aplikasi PHP
+13:16 Performance Test Menggunakan K6
+22:26 Persistence Connection
+31:04 Masalah di Persistence Connection
+33:39 Proxy Connection Pool
+37:32 Problem Idle Timeout di PHP
+42:35 Outro
+
+Kalau video ini bermanfaat, jangan lupa LIKE, SUBSCRIBE, dan SHARE ke temen kamu yang masih pakai PHP tanpa tau soal connection pool! 🚀
+
+#PHP #ConnectionPool #MySQL #ProxySQL #BackendDevelopment #ProgrammerZamanNow #LoadTesting #k6 #DevOps
