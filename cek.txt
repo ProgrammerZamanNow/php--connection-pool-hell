@@ -1,0 +1,1 @@
+podman exec shop_mysql mysqladmin -uroot -prootsecret processlist -i 1
